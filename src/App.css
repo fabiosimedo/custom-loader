@@ -1,0 +1,27 @@
+/* App.css */
+
+.loader-circle {
+  position: fixed;         /* fixa na viewport */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 150px;            /* diâmetro do círculo */
+  height: 150px;
+  border-radius: 50%;      /* deixa redondo */
+  overflow: hidden;        /* corta o conteúdo além do círculo */
+
+  display: flex;           /* centraliza o <img> internamente */
+  align-items: center;
+  justify-content: center;
+
+  /* fundo opcional pra destacar */
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.loader-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;       /* preenche todo o container sem distorcer */
+}
